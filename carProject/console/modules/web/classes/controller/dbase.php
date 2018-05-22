@@ -14,11 +14,11 @@ class Controller_Dbase extends \Controller
     public function get_index(){
         //运行sql语句
         $query = \DB::query('SELECT * from users');
-        //$result = $query->execute();
-        //var_dump($result);
+        $result = $query->execute();
+        var_dump($result);
 
         echo '<br>';
-
+die;
         //查询
         //$result2 = \DB::query('SELECT * from users',\DB::SELECT) ->execute();
         //var_dump($result2);
